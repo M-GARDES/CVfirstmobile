@@ -268,4 +268,7 @@ section > div{
         flex: 0 0 85%;
         margin-left: auto;
     }
+    .interet{
+        flex: 0 1 25%;
+    }
 }
