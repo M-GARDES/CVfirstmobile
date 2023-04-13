@@ -261,4 +261,11 @@ section > div{
         border: 2px solid #6F10E9;
         box-shadow: 0px 0px 20px #666;
     }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
 }
