@@ -5,6 +5,7 @@
     margin: 0px;
     text-align: justify;
     box-sizing: border-box;
+    text-align: left;
 }
 body{
     background: #ededed;
@@ -12,6 +13,7 @@ body{
 p{
     font-size: 1em;
     line-height: 1em;
+    text-align: left;
 }
 a{
     text-decoration: none;
@@ -90,6 +92,7 @@ section > div{
 }
 .prez{
     border-bottom: 2px dashed #ccc;
+    text-align: left;
 }
 .prez a{
     display: block;
@@ -105,6 +108,7 @@ section > div{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    text-align: left;
 }
 .contact-flex p:first-child{
     flex: 0 0 40%;
@@ -116,6 +120,7 @@ section > div{
     display: flex;
     justify-content: space-around;
     margin: 10px auto 0px auto;
+    text-align: left;
 }
 
 /*SECTION EXP ET FORMATION*/
@@ -125,6 +130,7 @@ section > div{
     border-bottom: 1px solid #bbb;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    text-align: left;
 }
 .exp p{
     text-align: center;
@@ -136,6 +142,7 @@ section > div{
 .exp-logo{
     flex: 0 0 25%;
     max-width: 100px;
+    text-align: left;
 }
 .exp-info{
     flex: 0 0 70%;
@@ -239,8 +246,10 @@ section > div{
     header h1{
         width: 80%;
     }
+    
     .prez, .contact{
         flex: 0 0 45%;
+        text-align: left;
     }
     .prez{
         border-bottom: none;
@@ -251,6 +260,7 @@ section > div{
     .contact{
         padding-left: 20px;
         margin-right: auto;
+        text-align: left;
     }
     .prez a{
         border: 2px solid transparent;
