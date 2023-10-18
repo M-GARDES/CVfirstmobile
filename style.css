@@ -19,6 +19,41 @@ a{
     text-decoration: none;
     color: #000;
 }
+#menu-toggle {
+    display: none;
+}
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    color: white;
+}
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #6F10E9;
+    width: 60%;
+    margin-top: 60px;
+    max-width: 130px;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#menu ul {
+    list-style: none;
+}
+#menu ul li {
+    margin-bottom: 10px;
+}
+#menu-toggle:checked + #menu-icon + #menu {
+    display: block;
+}
 
 /*HEADER & FOOTER*/
 header, footer{
@@ -282,3 +317,11 @@ section > div{
         flex: 0 1 25%;
     }
 }
+@media screen and (max-width: 767px) {
+    #menu-icon {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+}        
