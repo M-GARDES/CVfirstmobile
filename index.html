@@ -7,20 +7,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="CV de Magali">
         <link rel="stylesheet" href="style.min.css">
-    
     </head>      
     <body>
         <header>
-            <label for="menu-toggle" id="menu-icon">&#9776;</label>
+            <h1>CV  Magali Gardès</h1>
+            <label="menu-toggle" id="menu-icon" onclick="toggleMenu()" aria-label="Ouvrir/fermer le menu">&#9776;</label>
             <div id="menu">
                 <ul>
-                    <li><a href="#experiences">Expériences</a></li>
-                    <li><a href="#formation">Formation</a></li>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#interets">Centres d'intérêt</a></li>
+                    <li><a href="#exp">Expériences</a></li>
+                    <li><a href="#form">Formation</a></li>
+                    <li><a href="#comp">Compétences</a></li>
+                    <li><a href="#inter">Centres d'intérêt</a></li>
                 </ul>
             </div>
-            <h1>CV  Magali Gardès</h1>
         </header>
         
         <section>
@@ -35,7 +34,7 @@
                     d’apprentissage pour compléter mes compétences. L'optimisation du référencement (SEO),
                     le design et l’animation me passionne. Depuis plus de 3 ans j’ai pu acquérir des compétences diverses.
                 </p>
-                <a href="https://sd-6.archive-host.com/membres/up/1398759fbc9b507861efd6c0458c0d6930a1ed28/cvmgA1.pdf" alt="lien téléchargement" target="_blank" rel="noopener">Télécharger le CV</a>
+                <a href="https://sd-6.archive-host.com/membres/up/1398759fbc9b507861efd6c0458c0d6930a1ed28/cvmgA1.pdf" alt="lien téléchargement" tabindex="2" target="_blank" rel="noopener" title="Télécharger le CV au format PDF">Télécharger le CV</a>
             </div>
             <div class="contact">
                 <h2>Informations de contact</h2>
@@ -74,7 +73,7 @@
             </div>
         </section>
         
-        <section>
+        <section id="exp">
             <h2>Expériences professionnelles</h2>
             <div class="exp">
                 <div class="exp-logo">
@@ -156,9 +155,9 @@
             </div>
         </section>
         
-        <section>
+        <section id="form" >
             <h2>Formation</h2>
-            <div class="exp">
+            <div class="form">
                 <div class="exp-logo">
                     <img src="image/logo7.jpg" alt="Logo Afpa" width="200" height="100" loading="lazy">
                 </div>
@@ -219,7 +218,7 @@
                 </div>
             </div>
         </section>    
-        <section>
+        <section id="comp">
             <h2>Compétences</h2>
             <h3 class="h3gauche">Professionnelles</h3>
             <div class="comp">
@@ -261,7 +260,7 @@
             </div>
         </section>
         
-        <section>
+        <section id="inter">
             <h2>Centres d'intérêt</h2>
             <figure class="interet">
                 <img src="image/front.jpg" alt="informatique" width="150" height="150" loading="lazy">
@@ -280,7 +279,7 @@
                 <figcaption>Bénévole SOS Félins</figcaption>
             </figure>
         </section>
-        
+        <script src="menu.js"></script>
         <footer>
             <p>©Gardesmagali 2023</p>
         </footer>

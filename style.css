@@ -19,11 +19,9 @@ a{
     text-decoration: none;
     color: #000;
 }
-#menu-toggle {
-    display: none;
-}
+
 #menu-icon {
-    font-size: 24px;
+    font-size: 30px; /* Ajustez la taille de la police pour agrandir l'icône */
     cursor: pointer;
     display: block;
     position: fixed;
@@ -31,6 +29,12 @@ a{
     right: 20px;
     z-index: 100;
     color: white;
+    background-color: #6F10E9; /* Couleur du cercle */
+    width: 60px; /* Diamètre du cercle */
+    height: 60px; /* Diamètre du cercle */
+    border-radius: 50%; /* Pour créer un cercle */
+    text-align: center;
+    line-height: 60px; /* Pour centrer le contenu vertical */
 }
 #menu {
     display: none;
@@ -38,10 +42,12 @@ a{
     top: 0;
     right: 0;
     background: #6F10E9;
-    width: 60%;
-    margin-top: 60px;
-    max-width: 130px;
-    padding: 10px;
+    width: 30%;
+    margin-top: 80px;
+    margin-right: 10px;
+    max-width: 200px;
+    padding-left: 10px;
+    padding-right: 0;
     text-align: right;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -49,7 +55,12 @@ a{
     list-style: none;
 }
 #menu ul li {
-    margin-bottom: 10px;
+    font-size: 16px;
+}
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 #menu-toggle:checked + #menu-icon + #menu {
     display: block;
@@ -159,7 +170,7 @@ section > div{
 }
 
 /*SECTION EXP ET FORMATION*/
-.exp{
+.exp, .form{
     display: flex;
     flex-flow: row wrap;
     border-bottom: 1px solid #bbb;
@@ -324,4 +335,22 @@ section > div{
     #menu {
         display: none;
     }
-}        
+}  
+
+@media (max-width: 768px) {
+    #menu {
+      width: 20%;
+      max-height: 250px; /* Changer la largeur du menu pour qu'il occupe toute la largeur de l'écran */
+      margin-top: 70px; /* Supprimer la marge supérieure pour réduire l'espace entre le menu et le haut de l'écran */
+      max-width: none; /* Réinitialiser la largeur maximale pour occuper toute la largeur de l'écran */
+      padding: 2px; /* Réduire l'espacement interne du menu */
+    }
+    #menu ul li {
+        margin-bottom: 2px; /* Réduisez la marge entre les éléments du menu pour rapprocher les choix */
+        font-size: 10px; /* Réduisez la taille de la police des choix du menu si nécessaire */
+    }
+    #menu ul li a {
+     /* Réinitialiser la marge entre les éléments du menu si nécessaire */
+        font-size: 10px; /* Réduire la taille de la police des choix du menu si nécessaire */
+      }
+  }
