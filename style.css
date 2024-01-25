@@ -71,7 +71,12 @@ header, footer{
     width: 100%;
     padding: 20px 0px;
     background: linear-gradient(to bottom, #26034c, #840be8);
-    box-shadow: 0px 0px 15px #840be8;
+    box-shadow: 0 0 8px #fffffc,
+    inset 0 0 8px #6F10E9,
+    0 0 20px #6F10E9,
+    inset 0 0 16px #6F10E9,
+    0 0 22px #6F10E9,
+    inset 0 0 22px #6F10E9;
     background-size: cover;
 }
 header{
@@ -106,7 +111,12 @@ section{
     width: 100%;
     padding-bottom: 20px;
     margin: 20px auto;
-    box-shadow: 0px 0px 10px #840be8;
+    box-shadow: 0 0 8px #fffffc,
+    inset 0 0 8px #6F10E9,
+    0 0 20px #6F10E9,
+    inset 0 0 16px #6F10E9,
+    0 0 32px #6F10E9,
+    inset 0 0 32px #6F10E9;
     background-color: #ffffff;
 }
 
@@ -190,6 +200,11 @@ section > div{
     max-width: 100px;
     text-align: left;
 }
+.exp-lo{
+    flex: 0 0 25%;
+    max-width: 80px;
+    margin-left: auto;
+}
 .exp-info{
     flex: 0 0 70%;
     margin-left: auto;
@@ -222,6 +237,7 @@ section > div{
     border-radius: 5px;
     background-color: grey;
     border-bottom: 1px ridge grey;
+    margin-bottom: 5px;
 }
 .barre{
     display: block;
@@ -229,14 +245,19 @@ section > div{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+.c60{
+    width: 60%;
+    background-color: #dfb408;
+}
+
 .c70{
     width: 70%;
-    background-color: #ab74f3;
+    background-color: #dfb408;
 }
 .c80{
     width: 80%;
     background-color: #6F10E9;
-    border-radius: 5px;
 }
 .c85{
     width: 85%;
@@ -244,13 +265,11 @@ section > div{
 }
 .c90{
     width: 90%;
-    background-color: #ab74f3;
-    border-radius: 5px;
+    background-color: #dfb408;
 }
 .c95{
     width: 95%;
-    background-color: #ab74f3;
-    border-radius: 5px;
+    background-color: #dfb408;
 }
 .comp2{
     display: flex;
@@ -277,9 +296,18 @@ section > div{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 0px 0px 15px #555;
-}
+    box-shadow: 0 0 8px #fffffc,
+    inset 0 0 8px #6F10E9,
+    0 0 20px #6F10E9,
+    inset 0 0 16px #6F10E9,
+    0 0 32px #6F10E9,
+    inset 0 0 32px #6F10E9;
 
+    margin-bottom: 15px;
+}
+.figcaption{
+    font-size:  20px;
+}
 /*VERSION BUREAU DU CV*/
 @media screen and (min-width: 980px){
     section{
@@ -292,7 +320,6 @@ section > div{
     header h1{
         width: 80%;
     }
-    
     .prez, .contact{
         flex: 0 0 45%;
         text-align: left;
@@ -303,23 +330,45 @@ section > div{
         padding-right: 20px;
         margin-left: auto;
     }
+    .prez p{
+        font-size: 15px;
+        font-weight: bold;
+    }
     .contact{
         padding-left: 20px;
         margin-right: auto;
         text-align: left;
     }
-    .prez a{
-        border: 2px solid transparent;
+    .contact p{
+        font-size: 15px;
+        font-weight: bold;
     }
-    .prez a:hover{
-        color: #6F10E9;
+    .boutlchrgr{
+        margin-top: 20px;
+        padding: 15px;
+        font-size: 20px;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 0 8px #fffffc,
+            inset 0 0 8px #6F10E9,
+            0 0 20px #6F10E9,
+            inset 0 0 16px #6F10E9,
+            0 0 32px #6F10E9,
+            inset 0 0 32px #6F10E9;
+    }
+    .boutlchrgr:hover{
+        color: white;
         background-color: #fc07bb;
         border: 2px solid #6F10E9;
-        box-shadow: 0px 0px 20px #666;
+        box-shadow: 0px 0px 20px #6F10E9;
     }
     .exp-logo{
         flex: 0 0 10%;
     }
+    .exp-lo{
+    flex: 0 0 10%;
+    }
+
     .exp-info, .exp-desc{
         flex: 0 0 85%;
         margin-left: auto;
