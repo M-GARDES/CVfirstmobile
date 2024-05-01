@@ -71,12 +71,12 @@ header, footer{
     width: 100%;
     padding: 20px 0px;
     background: linear-gradient(to bottom, #26034c, #840be8);
-    box-shadow: 0 0 8px #fffffc,
+    box-shadow: 0 0 15px #0d0d0d,
     inset 0 0 8px #6F10E9,
-    0 0 20px #6F10E9,
-    inset 0 0 16px #6F10E9,
-    0 0 22px #6F10E9,
-    inset 0 0 22px #6F10E9;
+    0 0 20px #b3b905,
+    inset 0 0 16px #b3b905,
+    0 0 22px #b3b905,
+    inset 0 0 22px #b3b905;
     background-size: cover;
 }
 header{
